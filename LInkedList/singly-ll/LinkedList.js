@@ -57,10 +57,15 @@ class LinkedList {
   }
   printLL() {
     let temp = this.head;
+    let output = "";
     while (temp != null) {
-      console.log(temp.val, "-->");
+      // console.log(temp.val, "-->");
+      output += temp.val + "->";
       temp = temp.next;
+      if(output.length>100) break
     }
+    output += "null";
+    console.log(output);
   }
   removeFirst() {
     if (this.head == null) return;
@@ -109,31 +114,37 @@ class LinkedList {
     if (this.head == null) return;
     let temp = this.head;
     let idx = 0;
-  
+
     while (temp != null) {
-      if(temp.val == val) return idx
+      if (temp.val == val) return idx;
       temp = temp.next;
       idx++;
     }
     return -1;
   }
+  generateLL() {
+    for (let i = 11; i <= 15; i++) {
+      this.addLast(i);
+    }
+  }
 }
 
-let ll = new LinkedList();
+export default LinkedList;
+// let ll = new LinkedList();
 
-ll.addFirst(20);
-ll.addLast(30);
-ll.addLast(40);
-ll.addFirst(10);
-ll.addLast(50);
-ll.add(2, 44);
+// ll.addFirst(20);
+// ll.addLast(30);
+// ll.addLast(40);
+// ll.addFirst(10);
+// ll.addLast(50);
+// ll.add(2, 44);
 
-console.log(ll.printLL());
+// console.log(ll.printLL());
 // ll.removeFirst();
 // ll.removeLast();
 // ll.remove(2);
-console.log(ll.printLL());
-console.log("the val 44 found at idx", ll.search(44))
+// console.log(ll.printLL());
+// console.log("the val 44 found at idx", ll.search(44));
 // console.log(
 //   "head is ",
 //   ll.head.val,
@@ -142,5 +153,3 @@ console.log("the val 44 found at idx", ll.search(44))
 //   "size of linkd list is ",
 //   ll.size
 // );
-
-
