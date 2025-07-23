@@ -121,14 +121,14 @@ class DoublyLL {
     this.head = temp;
   }
 }
-
-let dl = new DoublyLL();
-dl.addFirst(30);
-dl.addFirst(40);
-dl.addFirst(50);
-dl.addFirst(60);
-dl.add(4, 44);
-dl.print();
+export default DoublyLL
+// let dl = new DoublyLL();
+// dl.addFirst(30);
+// dl.addFirst(40);
+// dl.addFirst(50);
+// dl.addFirst(60);
+// dl.add(4, 44);
+// dl.print();
 // console.log(dl.head.val, dl.tail);
 // dl.removeFirst();
 // console.log("after removing first element");
@@ -137,9 +137,9 @@ dl.print();
 // console.log("after removing last element");
 // dl.print();
 
-dl.remove(2);
-console.log("after removing 2nd index");
-dl.print();
-console.log("after reversing");
-dl.reverse();
-dl.print();
+// dl.remove(2);
+// console.log("after removing 2nd index");
+// dl.print();
+// console.log("after reversing");
+// dl.reverse();
+// dl.print();
