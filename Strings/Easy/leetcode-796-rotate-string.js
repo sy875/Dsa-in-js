@@ -1,3 +1,5 @@
+// 796. Rotate String
+
 const rotateString = function (s, goal) {
   if (goal.length !== s.length) return false;
   let newstr = s + s;
