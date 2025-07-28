@@ -10,3 +10,4 @@ const findMin = function (nums) {
     return nums[e]
 };
 
+ 
