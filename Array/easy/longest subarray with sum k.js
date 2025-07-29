@@ -1,3 +1,5 @@
+// https://www.geeksforgeeks.org/problems/longest-sub-array-with-sum-k0809/1
+
 //brute force O(n2)
 function longestSubarray(nums, k) {
   let max = 0;
