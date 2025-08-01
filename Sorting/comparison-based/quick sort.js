@@ -6,7 +6,7 @@ function partition(arr, low, high) {
     while (arr[i] <= pivot && i <= high - 1) i++;
     while (arr[j] > pivot && j >= low + 1) j--;
     if (i < j) [arr[i], arr[j]] = [arr[j], arr[i]];
-  }
+  } 
   [arr[low], arr[j]] = [arr[j], arr[low]];
   return j;
 }
